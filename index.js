@@ -58,15 +58,27 @@ server.listen(7000, function(){
             }
         }
     })
-    console.log('-------------------------------------------------------------')
-    console.log('Mini http server running on port ' + serverConfig.port + ' !');
-    console.log('You can open the floowing urls to view files.')
+    
+    var print = [];
+    print.push('-------------------------------------------------------------')
+    print.push('Mini http server running on port ' + serverConfig.port + ' !');
+    print.push('You can open the floowing urls to view files.');
     utils.getIP().forEach(function(val){
-        console.log(val + ":" + serverConfig.port);
+        print.push(val + ":" + serverConfig.port);
     });
-    console.log('Have fun ^_^');
-    console.log('-------------------------------------------------------------')
+    print.push('Have fun ^_^');
+    print.push('-------------------------------------------------------------');
+    var prev = '\t';
+    var length= print.length;
+    print.forEach(function(val,ind){
+        if(ind === 0 || ind === length-1){
+            console.log(val);
+        }else{
+                console.log(prev + val);
+        }
+    })
 })
 server.on('error', function(e){
     console.log(e);
 })
+
