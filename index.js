@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 var http = require('http');
 var fs = require('fs');
+var open = require("open");
 var rootPath = process.cwd();
 var path = require('path');
 var utils= require('./lib/utils');
@@ -77,6 +78,7 @@ server.listen(7000, function(){
                 console.log(prev + val);
         }
     })
+    open("http://127.0.0.1:"+serverConfig.port );
 })
 server.on('error', function(e){
     console.log(e);

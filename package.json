@@ -13,11 +13,13 @@
     "http",
     "server"
   ],
-  "repository":{
-    "type" : "git",
+  "repository": {
+    "type": "git",
     "url": "https://github.com/nunnly/m-server"
   },
   "author": "Hawk",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "open": "0.0.5"
+  }
 }
