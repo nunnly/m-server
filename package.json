@@ -7,7 +7,7 @@
   "description": "Simple Http Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/test.js"
   },
   "keywords": [
     "http",

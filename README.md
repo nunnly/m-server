@@ -1,5 +1,12 @@
 M-Server is a mini http server like python SimpleHttpServer that without any dependencies;
 
+<p align="center">
+    <a href="https://www.npmjs.com/package/m-server"><img src="https://img.shields.io/npm/dt/m-server.svg" alt="Downloads"></a>
+    <a href="https://www.npmjs.com/package/m-server"><img src="https://img.shields.io/npm/v/m-server.svg" alt="Version"></a>
+    <a href="https://www.npmjs.com/package/m-server"><img src="https://img.shields.io/npm/l/m-server.svg" alt="License"></a>
+     
+</p>
+
 ## useage
 
 Install
