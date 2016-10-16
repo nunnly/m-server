@@ -2,5 +2,5 @@ machine:
   node:
     version: 4
 test:
-    mocha:
+    post:
         - npm run test

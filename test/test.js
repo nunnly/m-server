@@ -1,7 +1,6 @@
 var assert = require('assert');
 var mServer = require('../lib/index.js').createServer;
 var http = require('http');
-console.log(process.env)
 describe('m-server', function() {
   describe('When m-server is listening on port 7000', function() {
     var sever = mServer();
