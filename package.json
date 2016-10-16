@@ -18,9 +18,5 @@
     "url": "https://github.com/nunnly/m-server"
   },
   "author": "Hawk",
-  "license": "MIT",
-  "devDependencies": {
-    "mocha" : "~3.1.2"
-  },
-  "dependencies": {}
+  "license": "MIT"
 }
