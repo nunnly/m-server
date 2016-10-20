@@ -3,7 +3,7 @@
   "bin": {
     "m-server": "index.js"
   },
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Simple static file HTTP server without any dependencies",
   "main": "index.js",
   "scripts": {
