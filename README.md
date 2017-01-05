@@ -1,4 +1,4 @@
-M-Server is a mini http server like python SimpleHttpServer that without any dependencies;
+M-Server is a mini http static server that without any dependencies;
 
 <p align="center">
     <a href="https://circleci.com/gh/nunnly/m-server/tree/master"><img src="https://img.shields.io/circleci/project/nunnly/m-server/master.svg" alt="Build Status"></a>

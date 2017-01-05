@@ -3,8 +3,8 @@
   "bin": {
     "m-server": "index.js"
   },
-  "version": "1.3.4",
-  "description": "Simple static file HTTP server without any dependencies",
+  "version": "1.4.0",
+  "description": "M-Server is a mini http static server that without any dependencies;",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test.js"
