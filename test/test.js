@@ -5,11 +5,12 @@ var utils = require('../lib/utils.js');
 var fs = require('fs');
 describe('m-server', function() {
   describe('When m-server is listening on port 7000', function() {
-    var sever = mServer();
+    var server = mServer();
     it('http server should return 200 status', function(done) {
       http.get('http://localhost:7000', function(res){
         assert.equal(res.statusCode, 200);
-        done()
+        done();
+        server.close();
       })
     });
   });
@@ -43,30 +44,34 @@ describe('m-server', function() {
         state ? fs.rmdirSync(dirname) : '';
         done();
       })
-    })
+    });
+    setTimeout(function(){
+      server.clone();
+    }, 1000)
   })
   describe('Utils test.', function(){
-    it('Object assign test', function(){
+    it('Object assign test', function(done){
       var a = {a:1},b={b:2},c={c:3}
       utils.assign(a,b,c);
       assert.equal(a.a === 1 && a.b === 2 && a.c === 3, true);
+      done();
     })
-    
-    it('assign test', function(){
+    it('assign test', function(done){
       var a = {a:1},b={b:2},c={c:3}
       var cache = Object.assign;
       Object.assign = undefined;
       utils.assign(a,b,c);
       Object.assign = cache;
       assert.equal(a.a === 1 && a.b === 2 && a.c === 3, true);
+      done();
+      
     });
 
-    it('sort test', function(){
+    it('sort test', function(done){
       var ret = utils.sort('3','3');
+      done();
       assert(ret === 0)
     })
 
   });
-
-
 });
