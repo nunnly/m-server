@@ -4,7 +4,7 @@ node_js:
   - 4
 install:
   - npm install -g codecov
-  - npm install -g mocha
+  - npm install mocha
   - npm install -g istanbul
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
