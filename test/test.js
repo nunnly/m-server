@@ -71,7 +71,15 @@ describe('m-server', function() {
       var ret = utils.sort('3','3');
       done();
       assert(ret === 0)
-    })
+    });
+    it('allow enable path', function(done){
+      assert(utils.allowPath('/test/b/a/c', '/test/b') === true);
+      done();
+    });
+    it('allow disable path', function(done){
+      assert(utils.allowPath('/c/c', '/test/b') === false);
+      done();
+    });
 
   });
 });
