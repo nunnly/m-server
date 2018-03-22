@@ -81,5 +81,12 @@ describe('m-server', function() {
       done();
     });
 
+    it('escape html string', function(done){
+      var testHtml = '<li class="topbar-navigation-item">&&<a class="topbar-navigation-link" href="/directory?query=type%3Ahackerone">Directory</a></li>'
+      var html = utils.escapeHtml(testHtml);
+      assert(/["'<>]/g.test(html) === false);
+      done();
+    });
+
   });
 });

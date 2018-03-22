@@ -2,6 +2,7 @@ M-Server is a mini http static server that without any dependencies;
 
 <p align="center">
     <a href="https://circleci.com/gh/nunnly/m-server/tree/master"><img src="https://img.shields.io/circleci/project/nunnly/m-server/master.svg" alt="Build Status"></a>
+    <a href="https://img.shields.io/badge/dependencies-none-blue.svg?style=flat-square&colorB=44CC11"><img src="https://img.shields.io/badge/dependencies-none-blue.svg?style=flat-square&colorB=44CC11" alt="dependencies"></a>
     <a href="https://codecov.io/github/nunnly/m-server?branch=master"><img src="https://img.shields.io/codecov/c/github/nunnly/m-server/master.svg" alt="Coverage Status"></a>
     <a href="https://www.npmjs.com/package/m-server"><img src="https://img.shields.io/npm/dt/m-server.svg" alt="Downloads"></a>
     <a href="https://www.npmjs.com/package/m-server"><img src="https://img.shields.io/npm/v/m-server.svg" alt="Version"></a>
